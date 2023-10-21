@@ -1,8 +1,12 @@
-import Title from "./Title";
+import React from 'react';
+import Title from './Title';
 
-export default function Header ({ pageTitle }) {
-    return (
-        <div className="page-header"><Title title={pageTitle} /></div>
-    )
-    
+const Header = ({ pageTitle }) => {
+  return (
+    <header>
+      <Title pageTitle={pageTitle} />
+    </header>
+  );
 }
+
+export default Header;

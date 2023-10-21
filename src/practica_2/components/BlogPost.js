@@ -1,11 +1,14 @@
-import Body from "./Body";
-import Title from "./Title";
+import React from 'react';
+import Title from './Title';
+import Body from './Body';
 
-export default function BlogPost ({ title, body }) {
-    return (
-        <article>
-            <Title title={title} />
-            <Body body={body} />
-        </article>
-    )
-}
+const BlogPost = ({ title, body }) => {
+  return (
+    <div>
+      <Title title={title} />
+      <Body body={body} />
+    </div>
+  );
+};
+
+export default BlogPost;

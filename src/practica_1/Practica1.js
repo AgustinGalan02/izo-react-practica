@@ -1,23 +1,23 @@
 // TODO 0 - Instalar el proyecto con "npm install"
 
 // TODO 1 - Importar productos
-import products from './products.json';
+import products from './products.json'
 
-const filterSmartphones = (products) => {
-    //TODO 2.1 - Filtrar utilizando
 
-	return products.filter((product) => product.category === 'smartphones');
-}
+const filterSmartphones = (products) => { 
+    return products.filter(product => product.category === 'laptops'); }
+
+
 const returnProductName = (products) => {
-    //TODO 3.1 - Usar template literals
-
-	return products.map((product) => `${product.brand} - ${product.title}`);
+    return (products.map(product => `${product.brand} - ${product.title}`));
 }
 const calcTotalPrice = (products) => {
-	return products.reduce((subtotal, product) => subtotal + product.price, 0);
+    return products.reduce((total, product) => total + product.price, 0);
 }
 const calcQuantity = (products) => {
-	return products.length;
+    const quantity = products.length;
+    console.log("Quantity:", quantity);
+    return quantity;
 }
 export default function Practica1 () {
     // TODO 2 - Filtrar productos donde sean "category" igual a "smartphone"
@@ -34,8 +34,8 @@ export default function Practica1 () {
     }
     return (
         <div>
-            <p>Productos de smartphones son { quantity } por un total de $ { total } </p>
-            <ul>
+            <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '30px' }}>Productos de smartphones son <b>{ quantity }</b> por un total de  <b>${ total }</b> </p>
+            <ul style={{ fontFamily: 'Arial, sans-serif', fontSize: '24px' }}>
                 { nameArray.map((item, index) => (
                     <li key={index}>{item}</li>
                 ))}

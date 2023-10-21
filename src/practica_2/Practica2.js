@@ -1,25 +1,26 @@
+import React from 'react';
+import Header from './components/Header';
+import Main from './components/Main';
+import './components/Practica2.css'; // Importa el archivo CSS
 
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Page from "./components/Page";
 
-export default function Practica2 () { // APP
-    const site = {
-        pageTitle: 'Unidad 1.2 - Práctica',
-        pageBody: 'Implementación de árbol de componentes y propiedades en React.'
-    };
-    return (
-        <div>
-            <Page>
-                <Header pageTitle={site.pageTitle} />
-                <Main 
-                    pageBody={site.pageBody} 
-                    links={[
-                        'https://google.com.ar',
-                        'https://institutozonaoeste.edu.ar/'
-                    ]}
-                />
-            </Page>
-        </div>
-    );
+function Practica2() {
+  const site = {
+    pageTitle: 'Unidad 1.2 - Práctica',
+    pageBody: 'Implementación de árbol de componentes y propiedades en React.',
+  };
+
+  const externalLinks = [
+    { text: 'Página 1', url: 'https://rosariocentral.com' },
+    { text: 'Página 2', url: 'https://alicante.com.ar/91-receta-chipa' },
+  ];
+
+  return (
+    <div>
+      <Header pageTitle={site.pageTitle} />
+      <Main pageBody={site.pageBody} externalLinks={externalLinks} />
+    </div>
+  );
 }
+
+export default Practica2;
