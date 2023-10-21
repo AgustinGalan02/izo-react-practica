@@ -36,5 +36,4 @@ const LogicGates = ({ input1, checkbox, selectedGate }) => {
   );
 };
 
-// Exporta el componente LogicGates.
 export default LogicGates;
