@@ -33,3 +33,4 @@ Considerando el JSX brindado en `Practica4.js`
 - Utilizar `LogicGates` para aplicar una compuerta lógica a estas 2 nuevas entradas
 - Utilizar `LogicGates` para aplicar una compuerta lógica a las 2 `LogicGates` previamente calculadas.
 - Bonus: Utilizar CSS y HTML adicional para que el formulario quede lo más claro posible en términos de visualización.
+- Bonus: Consuma algunos de los inputs de forma no controlada (`useRef` ) por React.
